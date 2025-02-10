@@ -17,11 +17,15 @@ const App = () => {
       React.createElement("a", { href: "/cart" }, "Carrito")
     ),
     React.createElement(
-      Routes,
-      null,
-      React.createElement(Route, { path: "/", element: React.createElement("h1", null, "Bienvenido a Abarrotes Claudia") }),
-      React.createElement(Route, { path: "/products", element: React.createElement(ProductsPage) }),
-      React.createElement(Route, { path: "/cart", element: React.createElement(CartPage) })
+      "div",
+      { className: "container" },
+      React.createElement(
+        Routes,
+        null,
+        React.createElement(Route, { path: "/", element: React.createElement("h1", null, "Bienvenido a Abarrotes Claudia") }),
+        React.createElement(Route, { path: "/products", element: React.createElement(ProductsPage) }),
+        React.createElement(Route, { path: "/cart", element: React.createElement(CartPage) })
+      )
     )
   );
 };
